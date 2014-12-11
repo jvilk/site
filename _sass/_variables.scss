@@ -14,16 +14,17 @@ $border-radius: 3px;
 // set-up the body font-size / line-height
 body {
   margin-top: 0px + $doc-line-height;
-  font-size: 0px + $doc-font-size;  
+  font-size: 0px + $doc-font-size;
 }
 
 
 // COLORS =====================================================
-$body-color         : #fff;
+$body-color         : #ebebeb;
+$article-bg-color   : #fff;
 $text-color         : #222;
-$base-color         : #343434;    
-$comp-color         : spin($base-color, 180); 
-$border-color       : #ddd;
+$base-color         : #343434;
+$comp-color         : spin($base-color, 180);
+$border-color       : #b8b8b8;
 $white              : #fff;
 $black              : #000;
 $accent-color       : $black;
@@ -42,5 +43,6 @@ $table-stripe-color-hover     : darken($table-stripe-color, 5);
 $micro            : "only screen and (min-width: 30em)";
 $small            : "only screen and (min-width: 37.5em)";
 $medium           : "only screen and (min-width: 48em)";
+$notmedium        : "only screen and (max-width: 48em)";
 $large            : "only screen and (min-width: 62em)";
 $x-large          : "only screen and (min-width: 86.375em)";
