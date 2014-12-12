@@ -9,12 +9,11 @@ If you have an issue/bug report/feature suggestion for any of my projects, I wou
 
 Otherwise, feel free to email me directly at [`jvilk@REMOVEME.cs.umass.edu`](mailto:jvilk@REMOVEME.cs.umass.edu).
 
-Snail mail can be directed at my school mailbox:
+Snail mail can be directed to my school mailbox:
 
-<ul class="simplelist">
-  <li>Room 354</li>
-  <li>Department of Computer Science</li>
-  <li>140 Governors Drive</li>
-  <li>Amherst, MA 01003</li>
-  <li>USA</li>
-</ul>
+* Room 354
+* School of Computer Science
+* 140 Governors Drive
+* Amherst, MA 01003
+* USA
+{: .simplelist}
