@@ -44,6 +44,17 @@ ul.simplelist {
 	}
 }
 
+ul.hlist {
+	padding-left: 0;
+	li {
+		display: inline;
+		margin-left: 1em;
+		list-style: none;
+		margin-bottom: 0;
+		font-size: 1.125rem;
+	}
+}
+
 li {
 	@include font-size(16,12,24);
 }
@@ -54,22 +65,28 @@ h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 h1 {
-	@include font-size(36);
+	font-size: 2em;
+	// @include font-size(36);
 }
 h2 {
-	@include font-size(32);
+	font-size: 1.5em;
+	//@include font-size(32);
 }
 h3 {
-	@include font-size(28);
+	font-size: 1.17em;
+	//@include font-size(28);
 }
 h4 {
-	@include font-size(24);
+	font-size: 1.12em;
+	//@include font-size(24);
 }
 h5 {
-	@include font-size(20);
+	font-size: .83em;
+	//@include font-size(20);
 }
 h6 {
-	@include font-size(18);
+	font-size: .75em;
+	//@include font-size(18);
 }
 
 u,
