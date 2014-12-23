@@ -5,7 +5,7 @@ locale: en_US
 description: Covering topics at the center of complex software systems.
 logo:
 search: false
-url: http://people.cs.umass.edu/~jvilk
+url: https://jvilk.github.io
 
 
 # Jekyll configuration
