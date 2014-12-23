@@ -2,7 +2,26 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: $body-color;
+	//background-color: $body-color;
+	/* fallback */
+	// background-color: #1a82f7;
+	// background: url(images/linear_bg_2.png);
+	// background-repeat: repeat-x;
+
+	/* Safari 4-5, Chrome 1-9 */
+	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($to-color), to($from-color));
+
+	/* Safari 5.1, Chrome 10+ */
+	// background: -webkit-linear-gradient(top, $from-color, $to-color);
+
+	/* Firefox 3.6+ */
+	// background: -moz-linear-gradient(top, $from-color, $to-color);
+
+	/* IE 10 */
+	// background: -ms-linear-gradient(top, $from-color, $to-color);
+
+	/* Opera 11.10+ */
+	// background: -o-linear-gradient(top, $from-color, $to-color);
 }
 
 
@@ -224,7 +243,7 @@ body {
 .entry,
 .hentry {
 	@include clearfix;
-	box-shadow: 0 0 5px #b8b8b8;
+	// box-shadow: 0 0 5px #b8b8b8;
 	background-color: #fff;
 	max-width: 60em;
 	margin-left: auto;

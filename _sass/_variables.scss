@@ -19,7 +19,7 @@ body {
 
 
 // COLORS =====================================================
-$body-color         : #ebebeb;
+$body-color         : #fff; // #ebebeb;
 $article-bg-color   : #fff;
 $text-color         : #222;
 $base-color         : #343434;
@@ -29,6 +29,9 @@ $white              : #fff;
 $black              : #000;
 $accent-color       : $black;
 $link-color         : #222;
+
+$from-color         : #FFFFFF;
+$to-color           : #61a4ff;
 
 $table-border-color           : $border-color;
 $table-border                 : 1px solid $table-border-color;
