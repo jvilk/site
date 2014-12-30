@@ -10,7 +10,7 @@ date: 2014-12-23T02:22:07-05:00
 comments: true
 ---
 
-I am currently working on adding Java 8 support to [DoppioJVM](https://github.com/plasma-umass/doppio). In doing so, I am discovering some of the rather surprising JVM changes required to support Java 8, and some interesting spec corner cases. In this blog post, I'll reveal some *very surprising* behavior involving a new Java 8 feature: Default interface methods!
+I am currently working on adding Java 7/8 support to [DoppioJVM](https://github.com/plasma-umass/doppio). In doing so, I am discovering some of the rather surprising JVM changes required to support Java 7+, and some interesting spec corner cases. In this blog post, I'll reveal some *very surprising* behavior involving a new Java 8 feature: Default interface methods!
 
 {{ excerpt_separator }}
 
@@ -20,7 +20,7 @@ Default interface methods let you include full method implementations in your in
 Classes that implement the interface do not need to explicitly implement these methods; they inherit the default implementation should the class not override it.
 I believe that this is a positive change for Java.
 
-For example, the following is now valid Java code:
+For example, the following is now valid Java code; it prints `Bark!`:
 
 {% highlight java %}
 public class Test {
@@ -93,6 +93,8 @@ If you try to compile the above program, `javac` prints out the following error:
       ^
       1 error
 
+(It should be noted that without default methods, and with a concrete implementation of `foo` in `JavaCHatesMe`, the program compiles with no issue.)
+
 However, this band-aid does not resolve the root problem! The following program compiles *just fine*:
 
 {% highlight java %}
@@ -123,9 +125,12 @@ class EmptySpeakImpl implements ISpeak2 {}
 class EmptySpeakImplChild extends EmptySpeakImpl implements ISpeak {}
 {% endhighlight %}
 
-Which `speak` implementation do you think `EmptySpeakImplChild` will inherit: `ISpeak.speak`, or `ISpeak2.speak`?
-Common Java sense might indicate that the JVM should prioritize default interface methods specified in interfaces implemented on child classes over default interface methods specified in interfaces implemented on parent classes.
-In this scheme, `EmptySpeakImplChild` should inherit `ISpeak.speak`, as it explicitly implements that interface.
+In this example, `EmptySpeakImpl` implements the interface `ISpeak2`, and thus it clearly inherits `ISpeak2.speak()`.
+However, `EmptySpeakImplChild` directly implements `ISpeak` and implements `ISpeak2` through its parent class, and thus its `speak()` method will be from either of those two interfaces.
+
+Which `speak` implementation do you think `EmptySpeakImplChild` should inherit: `ISpeak.speak`, or `ISpeak2.speak`?
+Common Java sense might indicate that the JVM should prioritize default interface methods specified in interfaces *directly implemented* by child classes over those inherited from interfaces implemented by parent classes.
+According to this scheme, `EmptySpeakImplChild` should inherit `ISpeak.speak`, as it explicitly implements that interface.
 
 However, Oracle's JVM, HotSpot, disagrees with this logic, as the above program prints out the following:
 
@@ -146,8 +151,8 @@ From [JVM Spec §5.4.3.3](http://docs.oracle.com/javase/specs/jvms/se8/html/jvms
 By this definition of method resolution, both the proposed "common sense" behavior discussed above and HotSpot's behavior are valid by the spec.
 In fact, one could simply invoke `Math.random()` in the process to decide among multiple choices.
 
-While I expect Java developers to rarely encounter this corner case, it is rather disturbing to encounter a specification that explicitly introduces ambiguity into a core process. Since Java 8 is the *first* version of Java to include this behavior, this was an explicit decision on the part of the JVM standards committee rather than an after-the-fact discovery. It would have been preferable to specify *some* order of preference, such as lexicographic ordering by name, order that interfaces are declared in the `class` file, etc.
+While I expect Java developers to rarely encounter this corner case, it is rather disturbing to encounter a specification that explicitly introduces ambiguity into a core process. Since Java 8 is the *first* version of Java to include this behavior, this was an explicit decision on the part of the JVM standards committee rather than an after-the-fact discovery.
 
-Even if the specified order of preference doesn't make sense to developers, it would allow alternative JVM implementations to have consistent behavior. I expect that programs that include this problematic behavior are doing so by accident, rather than conscious developer choice, and I would prefer that their program is portable across independent JVMs!
+It would have been preferable to specify *some* order of preference, such as lexicographic ordering by name, order that interfaces are declared in the `class` file, etc. Even if the specified order of preference doesn't make sense to developers, it would allow alternative JVM implementations to have consistent behavior. I expect that programs that include this problematic behavior are doing so by accident, rather than conscious developer choice, and I would prefer that their program is portable across spec-compliant independent JVMs!
 
-This is one of a few reasons why I'm concerned about the future of Java and the JVM. Between this and other seemingly sloppy work on Java 8 (most notably, the `MemberName` class behind the invokedynamic implementation found in OpenJDK, which I will eventually blog about), I'm wondering if Java and the JVM are in good hands at Oracle.
+Between this and other seemingly sloppy work on Java 7/8 (most notably how `invokedynamic` is implemented in OpenJDK, which I will eventually blog about), I'm wondering if Java and the JVM are in good hands at Oracle.
