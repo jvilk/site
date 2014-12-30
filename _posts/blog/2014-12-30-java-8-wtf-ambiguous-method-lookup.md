@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Java 8 WTF: Default Interface Methods"
+title: "Java 8 WTF: Ambiguous Method Lookup"
 modified:
 categories: blog
 tags: []
 image:
   feature:
-date: 2014-12-23T02:22:07-05:00
+date: 2014-12-30T15:39:07-05:00
 comments: true
 ---
 
