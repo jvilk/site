@@ -142,6 +142,8 @@ Why?
 
 ## Taking a Look at the JVM Specification
 
+**EDIT: My interpretation below is incorrect, but I will leave it here for posterity. Please see the next section for an updated interpretation.**
+
 A quick glance at the JVM specification reveals why this behavior occurs: *method lookup in Java 8 is officially ambiguous*.
 
 From [JVM Spec §5.4.3.3](http://docs.oracle.com/javase/specs/jvms/se8/html/jvms-5.html#jvms-5.4.3.3):
@@ -155,4 +157,19 @@ While I expect Java developers to rarely encounter this corner case, it is rathe
 
 It would have been preferable to specify *some* order of preference, such as lexicographic ordering by name, order that interfaces are declared in the `class` file, etc. Even if the specified order of preference doesn't make sense to developers, it would allow alternative JVM implementations to have consistent behavior. I expect that programs that include this problematic behavior are doing so by accident, rather than conscious developer choice, and I would prefer that their program is portable across spec-compliant independent JVMs!
 
-Between this and other seemingly sloppy work on Java 7/8 (most notably how `invokedynamic` is implemented in OpenJDK, which I will eventually blog about), I'm wondering if Java and the JVM are in good hands at Oracle.
+## Edit: Alternative JVM Specification Interpretation
+
+User pron98 on reddit pointed out [that my interpretation of the JVM specification](http://www.reddit.com/r/programming/comments/2qula0/java_8_wtf_ambiguous_method_lookup/cn9th0y) may be incorrect, and that my example is not triggering the ambiguous behavior quoted above. In pron98's interpretation, the term *superinterfaces* in the specification refers solely to *direct superinterfaces* -- that is, interfaces directly implemented by a class C -- rather than *indirect superinterfaces*, which includes those that are inherited from C's parent classes.
+Under this interpretation, default method bodies inherited from interfaces implemented on parent classes will *always* override default method bodies inherited from interfaces implemented on child classes.
+
+pron98 links to a [section in the Java Language Specification](http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.8) which supports this interpretation:
+
+> Note that it is possible for an inherited concrete method to prevent the inheritance of an abstract or default method. (Later we will assert that the concrete method overrides the abstract or default method "from C".) Also, it is possible for one supertype method to prevent the inheritance of another supertype method if the former "already" overrides the latter - this is the same as the rule for interfaces (§9.4.1), and prevents conflicts in which multiple default methods are inherited and one implementation is clearly meant to supersede the other.]
+
+At first, this behavior seemed counterintuitive to me, as it appears to invert the inheritance hierarchy (e.g. methods in parent classes taking precedence over methods in child classes). However, *default* methods are used only when no other implementations exist, so if an implementation exists from a parent class, it makes some sense that the child class's default method will not be used when an implementation is first found in a parent class.
+
+With all this said, method lookup **is still ambiguous** in the case that a class implements two interfaces with default method bodies for the same method. `javac` blocks all such programs from compiling, so Java programs are immune to the ambiguity, but non-Java languages that run on the JVM may still encounter the ambiguity.
+
+## Next Post: `invokedynamic`
+
+In my next post, I will dive into the murky world of `invokedynamic`: the specification, the implementation in OpenJDK, and the resulting consequences for JVM implementors.
