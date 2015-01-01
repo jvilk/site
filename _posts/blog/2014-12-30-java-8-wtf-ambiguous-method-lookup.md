@@ -170,6 +170,12 @@ At first, this behavior seemed counterintuitive to me, as it appears to invert t
 
 With all this said, method lookup **is still ambiguous** in the case that a class implements two interfaces with default method bodies for the same method. `javac` blocks all such programs from compiling, so Java programs are immune to the ambiguity, but non-Java languages that run on the JVM may still encounter the ambiguity.
 
+## Edit 2: A little more complication...
+
+I missed one more subtlety in the specification. Buried in the method resolution section is the term *maximally-specific superinterface methods* of `C`. When no implementation for an interface method exists, and the JVM goes searching for a default implementation, the definition of this term defines a priority on *certain* default interface methods.
+
+This term is applicable to my example application with `ISpeak`. In particular, the default interface methods on subinterfaces are always prioritized over the default interface methods on their parents. Thus, since `EmptySpeakImplChild`'s parent implements `ISpeak2`, which is a subinterface of `ISpeak`, its default methods will *always* trump `ISpeak`'s default methods. As a result, my example is even less ambiguous than I thought it was!
+
 ## Next Post: `invokedynamic`
 
 In my next post, I will dive into the murky world of `invokedynamic`: the specification, the implementation in OpenJDK, and the resulting consequences for JVM implementors.
