@@ -63,7 +63,6 @@ Occasionally, I find the time to work on some fun side projects.
 >
 > I augmented [Emscripten](https://github.com/kripken/emscripten/)'s SDL emulation with support for the SDL Joystick API using the [HTML5 Gamepad API](http://www.w3.org/TR/gamepad/). As a result, SDL applications ported to the web with Emscripten, such as JSMESS, will function appropriately with USB gamepads. This code has been integrated into the Emscripten code base, and is present in Emscripten releases since v1.7.3.
 >
-> * [Simple Demo [FF and Chrome Only] ](http://people.cs.umass.edu/~jvilk/sdljoy/sdljoy.html)
 > {: .hlist}
 {: .project}
 
