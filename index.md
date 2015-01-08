@@ -20,6 +20,8 @@ I am interested in bringing general purpose programming to the web, including th
 >
 > Doppio is a JavaScript-based runtime system that makes it possible to run unaltered applications written in general-purpose languages directly inside the browser. Doppio provides a wide range of runtime services, including a file system that enables local and external (cloud-based) storage, an unmanaged heap, sockets, blocking I/O, and multiple threads. We demonstrate Doppio's usefulness with two case studies: we extend Emscripten with Doppio, letting it run an unmodified C++ application in the browser with full functionality, and present DoppioJVM, an interpreter that runs unmodified JVM programs directly in the browser. This work appeared at [PLDI 2014](http://conferences.inf.ed.ac.uk/pldi2014/), and won the [Distinguished Artifact Award](http://pldi14-aec.cs.brown.edu/)!
 >
+> DoppioJVM is currently used by the University of Illinois at [CodeMoo.com](http://codemoo.com/) to teach children how to program in Java, and components of Doppio are used by the [MS-DOS Collection](https://archive.org/details/softwarelibrary_msdos_games/v2) at the [Internet Archive](https://archive.org/).
+>
 > * [Demo](http://doppiojvm.org/)
 > * [Source Code](https://github.com/plasma-umass/doppio)
 > * [Full Paper](http://dl.acm.org/citation.cfm?id=2594293) ([Alt. Link](https://plasma-umass.github.io/doppio-demo/paper.pdf))
@@ -38,12 +40,21 @@ I am interested in bringing general purpose programming to the web, including th
 
 Occasionally, I find the time to work on some fun side projects.
 
+> **MS-DOS Collection at the Internet Archive**
+>
+> I worked with the [Internet Archive](https://archive.org/) to integrate [Doppio's file system](https://github.com/jvilk/browserfs) into [em-DOSBox](https://github.com/dreamlayers/em-dosbox) to make an existing collection of DOS games playable in the browser. I also worked with archive employees to address a complex Cross-origin Resource Sharing (CORS) issue that prevented the initial deployment from working in Internet Explorer and Safari.
+>
+> * [Homepage](https://archive.org/details/softwarelibrary_msdos_games/v2)
+> {: .hlist}
+{: .project}
+
 > **JSMESS: Multi Emulator Super System in JavaScript**
 >
 > The [JSMESS](http://jsmess.textfiles.com/) project aims to port the [Multi Emulator Super System (MESS)](http://mess.org/) to JavaScript to enable accurate and embeddable vintage computer and video game console emulators in the browser. This project has enabled the [Internet Archive](http://archive.org/) to provide its visitors with interactive demos of vintage and historical software for educational purposes. We use [Emscripten](https://github.com/kripken/emscripten) along with tweaks to the MESS source code to accomplish this feat.
 >
 > * [Homepage and Demo](http://jsmess.textfiles.com/)
-> * [Internet Archive Historical Software Collection](https://archive.org/details/historicalsoftware)
+> * [Historical Software Collection](https://archive.org/details/historicalsoftware)
+> * [Console Living Room](https://archive.org/details/consolelivingroom)
 > * [Source Code](https://github.com/jsmess/jsmess)
 > {: .hlist}
 {: .project}
