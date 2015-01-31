@@ -25,6 +25,7 @@ I am interested in bringing general purpose programming to the web, including th
 > * [Demo](http://doppiojvm.org/)
 > * [Source Code](https://github.com/plasma-umass/doppio)
 > * [Full Paper](http://dl.acm.org/citation.cfm?id=2594293) ([Alt. Link](https://plasma-umass.github.io/doppio-demo/paper.pdf))
+> * [Talk @ Microsoft Research (Video)](http://research.microsoft.com/apps/video/default.aspx?id=238749&l=i)
 > {: .hlist}
 {: .project}
 
