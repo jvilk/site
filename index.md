@@ -16,6 +16,23 @@ I am a fourth year PhD student at the University of Massachusetts Amherst. I wor
 
 I am interested in bringing general purpose programming to the web, including the resources that these programs require. To achieve this goal, my research brings existing operating system abstractions and programming languages into the web browser in a portable manner using JavaScript. My work enables developers to use existing and well-tested general purpose code in the browser environment.
 
+> **SurroundWeb: Mitigating Privacy Concerns in a 3D Web Browser**
+>
+> Immersive experiences that mix digital and real-world objects are becoming reality, but they raise serious privacy concerns as they require real-time sensor input. SurroundWeb is the first 3D web browser that provides the novel functionality of rendering web content onto a room while tackling many of the inherent privacy challenges. Following the principle of least privilege, we propose three abstractions for immersive rendering:
+>
+> 1. The *room skeleton* lets applications place content in response to the physical dimensions and locations of renderable surfaces in a room.
+> 2. The *detection sandbox* lets applications declaratively place content near recognized objects in the room without revealing if the object is present.
+> 3. *Satellite screens* let applications display content across devices registered with SurroundWeb.
+>
+> We implement these abstractions in a prototype system, an demonstrate that a wide range of immersive experiences can be implemented  with acceptable performance. SurroundWeb will appear at [IEEE Security and Privacy 2015](http://www.ieee-security.org/TC/SP2015/).
+>
+> * IEEE S&P '15 Paper (Coming soon!)
+> * [Tech Report](http://research.microsoft.com/apps/pubs/?id=209968)
+> * [TechFair 2014 (Video)](http://research.microsoft.com/apps/video/?id=212669)
+> * [BBC Coverage (Video)](http://www.bbc.com/news/technology-27243375)
+> {: .hlist}
+{: .project}
+
 > **Doppio: Breaking the Browser Language Barrier**
 >
 > Doppio is a JavaScript-based runtime system that makes it possible to run unaltered applications written in general-purpose languages directly inside the browser. Doppio provides a wide range of runtime services, including a file system that enables local and external (cloud-based) storage, an unmanaged heap, sockets, blocking I/O, and multiple threads. We demonstrate Doppio's usefulness with two case studies: we extend Emscripten with Doppio, letting it run an unmodified C++ application in the browser with full functionality, and present DoppioJVM, an interpreter that runs unmodified JVM programs directly in the browser. This work appeared at [PLDI 2014](http://conferences.inf.ed.ac.uk/pldi2014/), won the [Distinguished Artifact Award](http://pldi14-aec.cs.brown.edu/), and was selected as a [SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)!
@@ -24,16 +41,8 @@ I am interested in bringing general purpose programming to the web, including th
 >
 > * [Demo](http://doppiojvm.org/)
 > * [Source Code](https://github.com/plasma-umass/doppio)
-> * [Full Paper](http://dl.acm.org/citation.cfm?id=2594293) ([Alt. Link](https://plasma-umass.github.io/doppio-demo/paper.pdf))
+> * [PLDI '14 Paper](http://dl.acm.org/citation.cfm?id=2594293) ([Alt. Link](https://plasma-umass.github.io/doppio-demo/paper.pdf))
 > * [Talk @ Microsoft Research (Video)](http://research.microsoft.com/apps/video/default.aspx?id=238749&l=i)
-> {: .hlist}
-{: .project}
-
-> **SurroundWeb: Least Privilege for Immersive "Web Rooms"**
->
-> As an intern at Microsoft Research, I worked with [David Molnar](http://research.microsoft.com/en-us/people/dmolnar/) and many others to build SurroundWeb. SurroundWeb is a 3D Browser that gives web pages the ability to display across multiple surfaces in a room, adapt their appearance to objects present in that room, and react to natural user input. SurroundWeb introduces two new abstractions: a Room Skeleton that enables least privilege for room rendering, and a Detection Sandbox that allows web pages to register content to show if an object is detected, but prevents the web server from knowing if the object is present. We demonstrate a range of previously proposed and novel experiences can be implemented in a least-privilege way using SurroundWeb.
->
-> * [Tech Report (In submission)](http://research.microsoft.com/apps/pubs/?id=209968)
 > {: .hlist}
 {: .project}
 
