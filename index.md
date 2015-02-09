@@ -86,19 +86,39 @@ Occasionally, I find the time to work on some fun side projects.
 * **Software Engineering Intern**, SoftArtisans Inc., Summer 2010.
 {: .simplelist}
 
+## Education
+
+* **M.S. in Computer Science**, University of Massachusetts, 2014.
+* **B.S. in Computer Science**, Worcester Polytechnic Institute, 2011.
+{: .simplelist}
+
 ## Awards
 
 * **[SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)** for [Doppio](http://dl.acm.org/citation.cfm?id=2594293), November 2014.
-* **Distinguished Artifact Award** for [DoppioJVM](http://github.com/plasma-umass/doppio), PLDI 2014.
+* **USENIX Travel Grant Recipient**, OSDI 2014.
+* **Distinguished Artifact Award** for [Doppio: Breaking the Browser Language Barrier](http://github.com/plasma-umass/doppio), PLDI 2014.
+* **Programming Languages Mentoring Workshop Travel Grant Recipient**, POPL 2012.
+* **Upsilon Pi Epsilon computer science honor society member**, inducted into the WPI chapter in 2011.
+* **Salisbury Prize**, WPI, 2011.
+  * Awarded for completing all of my requirements at WPI "faithfully, industriously, and with distinguished attainment".
+* **Dr. Neil G. Sullivan Memorial Award**, WPI, 2010.
+  * Awarded annually to three junior undergraduates in recognition of their demonstrated ability and promise.
+* **WPI Student Employee of the Year Nominee**, WPI, 2009-2010.
+* **Charles O' Thompson Scholar**, WPI, 2008.
+  * Recognizes outstanding performance by first-year undergraduate students.
+{: .simplelist}
+
+## Professional Activities
+
+* **Graduate Representative**, academic year 2014-2015, University of Massachusetts School of Computer Science.
+  * Graduate representatives attend and vote during faculty meetings, and form a bridge between the graduate students and the faculty as a whole.
+* **Student Volunteer**, OOPSLA 2014.
+* **Artifact Evaluation Committee Member**: OOPSLA 2015, PLDI 2015, OOPSLA 2014.
+* **External Reviewer:** USENIX Security 2014, PLDI 2014, OOPSLA 2012, MSPC 2012, HotPar 2012.
+* **Member**, Association for Computing Machinery, 2008-present.
 {: .simplelist}
 
 ## Teaching
 
 * **Mentor**, Doppio, PLASMA Lab, Google Summer of Code, Summer 2013.
-{: .simplelist}
-
-## Education
-
-* **M.S. in Computer Science**, University of Massachusetts, 2014.
-* **B.S. in Computer Science**, Worcester Polytechnic Institute, 2011.
 {: .simplelist}
