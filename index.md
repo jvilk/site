@@ -24,7 +24,7 @@ I am interested in bringing general purpose programming to the web, including th
 > 2. The *detection sandbox* lets applications declaratively place content near recognized objects in the room without revealing if the object is present.
 > 3. *Satellite screens* let applications display content across devices registered with SurroundWeb.
 >
-> We implement these abstractions in a prototype system, an demonstrate that a wide range of immersive experiences can be implemented  with acceptable performance. SurroundWeb will appear at [IEEE Security and Privacy 2015](http://www.ieee-security.org/TC/SP2015/).
+> We implement these abstractions in a prototype system, and demonstrate that a wide range of immersive experiences can be implemented  with acceptable performance. SurroundWeb will appear at [IEEE Security and Privacy 2015](http://www.ieee-security.org/TC/SP2015/).
 >
 > * IEEE S&P '15 Paper (Coming soon!)
 > * [Tech Report](http://research.microsoft.com/apps/pubs/?id=209968)
