@@ -94,6 +94,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 ## Awards
 
+* **Facebook Fellowship** for the 2015-2016 and 2016-2017 academic years, February 2015.
 * **[SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)** for [Doppio](http://dl.acm.org/citation.cfm?id=2594293), November 2014.
 * **USENIX Travel Grant Recipient**, OSDI 2014.
 * **Distinguished Artifact Award** for [Doppio: Breaking the Browser Language Barrier](http://github.com/plasma-umass/doppio), PLDI 2014.
