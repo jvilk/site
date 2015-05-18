@@ -16,6 +16,18 @@ I am a fourth year PhD student at the University of Massachusetts Amherst. I wor
 
 I am interested in bringing general purpose programming to the web, including the resources that these programs require. To achieve this goal, my research brings existing operating system abstractions and programming languages into the web browser in a portable manner using JavaScript. My work enables developers to use existing and well-tested general purpose code in the browser environment.
 
+> **Lightweight JavaScript Virtual Machines**
+>
+>Virtual machines are useful for many tasks. For example, the virtualization layer acts as a convenient boundary for encapsulating program state, letting users snapshot, migrate, and resume complex, multi-level software applications. The virtual machine interface (VMI) also provides a natural introspection point for logging nondeterministic events that affect program execution. These event logs enable a variety of security and debugging analyses.
+>
+> Prior VMIs like Xen focus on providing strong and efficient isolation. In this paper, we describe a new approach called interrogative virtualization whose primary goal is to *efficiently capture application-level semantics* in order to *minimize the size of VM snapshots and event logs.* By raising the abstraction level of the VMI to that of the application of interest, interrogative VMs can safely ignore large portions of architectural state in the OS and the hardware. As a concrete demonstration, we introduce *JavaScript virtual machines*, and describe how a managed runtime, suitably extended to capture a small number of nontraditional events, defines an interrogative VMI whose virtual machines are an order of magnitude smaller than those of prior VMIs like Xen. We show that interrogative virtualization can retain standard VM security guarantees while still preserving small VM sizes by layering the interrogative VMI atop a traditional VMI like Xen. To demonstrate the utility of interrogative VMIs, we build MoveJS, a system that efficiently migrates the client-side of web applications across physical machines, and ReJS, a time-travel debugger for the browser.
+>
+> This work is currently in submission.
+>
+> * [Channel9: Time-Travel Debugging for JavaScript/HTML (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
+> {: .hlist}
+{: .project}
+
 > **SurroundWeb: Mitigating Privacy Concerns in a 3D Web Browser**
 >
 > Immersive experiences that mix digital and real-world objects are becoming reality, but they raise serious privacy concerns as they require real-time sensor input. SurroundWeb is the first 3D web browser that provides the novel functionality of rendering web content onto a room while tackling many of the inherent privacy challenges. Following the principle of least privilege, we propose three abstractions for immersive rendering:
@@ -26,8 +38,7 @@ I am interested in bringing general purpose programming to the web, including th
 >
 > We implement these abstractions in a prototype system, and demonstrate that a wide range of immersive experiences can be implemented  with acceptable performance. SurroundWeb will appear at [IEEE Security and Privacy 2015](http://www.ieee-security.org/TC/SP2015/).
 >
-> * IEEE S&P '15 Paper (Coming soon!)
-> * [Tech Report](http://research.microsoft.com/apps/pubs/?id=209968)
+> * [IEEE S&P '15 Paper](https://jvilk.com/assets/pdf/oakland15.pdf)
 > * [TechFair 2014 (Video)](http://research.microsoft.com/apps/video/?id=212669)
 > * [BBC Coverage (Video)](http://www.bbc.com/news/technology-27243375)
 > {: .hlist}
@@ -78,8 +89,12 @@ Occasionally, I find the time to work on some fun side projects.
 
 ## Experience
 
+* **Research Intern**, Microsoft Research, Summer 2015.
+  * *Mentors*: [James Mickens](http://research.microsoft.com/en-us/people/mickens/) and [Mark Marron](http://research.microsoft.com/en-us/um/people/marron/)
 * **Research Intern**, Microsoft Research, Summer 2014.
+  * *Mentors*: [James Mickens](http://research.microsoft.com/en-us/people/mickens/) and [Mark Marron](http://research.microsoft.com/en-us/um/people/marron/)
 * **Research Intern**, Microsoft Research, Summer 2013.
+  * *Mentor*: [David Molnar](http://research.microsoft.com/en-us/people/dmolnar/)
 * **Software Engineering Intern**, Google, Summer 2012.
 * **Research Assistant**, University of Massachusetts, 2011 to present.
 * **Research Intern**, MIT Lincoln Laboratory, Summer 2011.
@@ -111,6 +126,8 @@ Occasionally, I find the time to work on some fun side projects.
 
 ## Professional Activities
 
+* **Mentor**, [Computing Beyond the Double Bind Mentoring Network](https://www.terc.edu/display/Projects/Computing+Beyond+the+Double+Bind%3A+Women+of+Color+in+Computing+Education+and+Careers), 2015-present.
+* **Member**, IEEE, 2015-present.
 * **Graduate Representative**, academic year 2014-2015, University of Massachusetts School of Computer Science.
   * Graduate representatives attend and vote during faculty meetings, and form a bridge between the graduate students and the faculty as a whole.
 * **Student Volunteer**, OOPSLA 2014.
@@ -121,5 +138,8 @@ Occasionally, I find the time to work on some fun side projects.
 
 ## Teaching
 
+* **Mentor**, Doppio, PLASMA Lab, Google Summer of Code, Summer 2015.
+  * *Students*: Muhammad Bhatti
 * **Mentor**, Doppio, PLASMA Lab, Google Summer of Code, Summer 2013.
+  * *Students*: [Giles Lavelle](http://lavelle.co/) & [Braden McDorman](http://bmcdorman.cloudapp.net/)
 {: .simplelist}
