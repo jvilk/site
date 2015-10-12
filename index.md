@@ -3,24 +3,32 @@ layout: page
 title: About Me
 image:
   feature: about_photo.jpg
-excerpt: "John Vilk is a fourth year PhD student at UMass Amherst."
+excerpt: "John Vilk is a fifth year PhD student at UMass Amherst."
 modified: 2014-08-08T19:44:38.564948-04:00
 ---
 
-I am a fourth year PhD student at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
+I am a fifth year PhD student at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
 
 * Table of Contents
 {:toc}
 
 ## Research
 
-I am interested in bringing general purpose programming to the web, including the resources that these programs require. To achieve this goal, my research brings existing operating system abstractions and programming languages into the web browser in a portable manner using JavaScript. My work enables developers to use existing and well-tested general purpose code in the browser environment.
+I am interested in bringing general purpose programming and novel debugging techniques to constrained programming environments, such as the web browser.
+These environments lack common operating system abstractions and constrain execution in ways that preclude reusing code written for general purpose programming environments.
+At the same time, these programs exhibit characteristics that can be exploited to produce low-overhead debugging tools.
 
-> **Lightweight JavaScript Virtual Machines**
+> **Mesovirtualization: Enabling Lightweight Virtual Machines**
 >
->Virtual machines are useful for many tasks. For example, the virtualization layer acts as a convenient boundary for encapsulating program state, letting users snapshot, migrate, and resume complex, multi-level software applications. The virtual machine interface (VMI) also provides a natural introspection point for logging nondeterministic events that affect program execution. These event logs enable a variety of security and debugging analyses.
+> We introduce mesovirtualization, a new technique for running lightweight VMs in the cloud.
+> Mesovirtualization leverages the fact that many cloud applications run atop a managed runtime; by treating the managed runtime interface as the definition for a virtualized hardware environment, we capture rich, high-level application semantics while ignoring large amounts of low-level architectural state that traditional virtualization approaches have to manage.
+> The resulting VMs are orders of magnitude smaller than traditional Xen images.
 >
-> Prior VMIs like Xen focus on providing strong and efficient isolation. In this paper, we describe a new approach called interrogative virtualization whose primary goal is to *efficiently capture application-level semantics* in order to *minimize the size of VM snapshots and event logs.* By raising the abstraction level of the VMI to that of the application of interest, interrogative VMs can safely ignore large portions of architectural state in the OS and the hardware. As a concrete demonstration, we introduce *JavaScript virtual machines*, and describe how a managed runtime, suitably extended to capture a small number of nontraditional events, defines an interrogative VMI whose virtual machines are an order of magnitude smaller than those of prior VMIs like Xen. We show that interrogative virtualization can retain standard VM security guarantees while still preserving small VM sizes by layering the interrogative VMI atop a traditional VMI like Xen. To demonstrate the utility of interrogative VMIs, we build MoveJS, a system that efficiently migrates the client-side of web applications across physical machines, and ReJS, a time-travel debugger for the browser.
+> Mesovirtualization enables efficient implementations of VM services that have traditionally been expensive to support.
+> For example, we demonstrate that mesovirtualization makes VM snapshotting and event logging cheap; using these two primitives, we construct the first time travel debugger which is fast enough to run on production systems.
+>Virtual machines are useful for many tasks. For example, the virtualization layer acts as a convenient boundary for encapsulating program state, letting users snapshot, migrate, and resume complex, multi-level software applications.
+> The virtual machine interface (VMI) also provides a natural introspection point for logging nondeterministic events that affect program execution.
+> These event logs enable a variety of security and debugging analyses.
 >
 > This work is currently in submission.
 >
@@ -63,7 +71,8 @@ Occasionally, I find the time to work on some fun side projects.
 
 > **MS-DOS Collection at the Internet Archive**
 >
-> The [MS-DOS Collection](https://archive.org/details/softwarelibrary_msdos_games/v2) at the [Internet Archive](https://archive.org/) relies on [Doppio's file system](https://github.com/jvilk/browserfs) to make a large collection of DOS games playable in the browser. I worked with archive employees to integrate the file system appropriately, and to address a complex Cross-origin Resource Sharing (CORS) issue that prevented the initial deployment from working in Internet Explorer and Safari.
+> The [MS-DOS Collection](https://archive.org/details/softwarelibrary_msdos_games/v2) at the [Internet Archive](https://archive.org/) relies on [Doppio's file system](https://github.com/jvilk/browserfs) to make a large collection of DOS games playable in the browser.
+> I worked with archive employees to integrate the file system appropriately, and to address a complex Cross-origin Resource Sharing (CORS) issue that prevented the initial deployment from working in Internet Explorer and Safari.
 >
 > * [Homepage](https://archive.org/details/softwarelibrary_msdos_games/v2)
 > {: .hlist}
@@ -90,9 +99,9 @@ Occasionally, I find the time to work on some fun side projects.
 ## Experience
 
 * **Research Intern**, Microsoft Research, Summer 2015.
-  * *Mentors*: [James Mickens](http://research.microsoft.com/en-us/people/mickens/) and [Mark Marron](http://research.microsoft.com/en-us/um/people/marron/)
+  * *Mentors*: [James Mickens](http://www.seas.harvard.edu/directory/mickens) and [Mark Marron](http://research.microsoft.com/en-us/um/people/marron/)
 * **Research Intern**, Microsoft Research, Summer 2014.
-  * *Mentors*: [James Mickens](http://research.microsoft.com/en-us/people/mickens/) and [Mark Marron](http://research.microsoft.com/en-us/um/people/marron/)
+  * *Mentors*: [James Mickens](http://www.seas.harvard.edu/directory/mickens) and [Mark Marron](http://research.microsoft.com/en-us/um/people/marron/)
 * **Research Intern**, Microsoft Research, Summer 2013.
   * *Mentor*: [David Molnar](http://research.microsoft.com/en-us/people/dmolnar/)
 * **Software Engineering Intern**, Google, Summer 2012.
@@ -109,10 +118,12 @@ Occasionally, I find the time to work on some fun side projects.
 
 ## Awards
 
+* **IEEE Security & Privacy Student Travel Grant Recipient**, IEEE S&P 2015.
 * **Facebook Fellowship** for the 2015-2016 and 2016-2017 academic years, February 2015.
 * **[SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)** for [Doppio](http://dl.acm.org/citation.cfm?id=2594293), November 2014.
-* **USENIX Travel Grant Recipient**, OSDI 2014.
+* **USENIX Student Grant Recipient** for travel to OSDI 2014.
 * **Distinguished Artifact Award** for [Doppio: Breaking the Browser Language Barrier](http://github.com/plasma-umass/doppio), PLDI 2014.
+* **SIGPLAN PAC Student Travel Grant Recipient** for travel to PLDI 2014.
 * **Programming Languages Mentoring Workshop Travel Grant Recipient**, POPL 2012.
 * **Upsilon Pi Epsilon computer science honor society member**, inducted into the WPI chapter in 2011.
 * **Salisbury Prize**, WPI, 2011.
@@ -128,6 +139,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 * **Mentor**, [Computing Beyond the Double Bind Mentoring Network](https://www.terc.edu/display/Projects/Computing+Beyond+the+Double+Bind%3A+Women+of+Color+in+Computing+Education+and+Careers), 2015-present.
 * **Member**, IEEE, 2015-present.
+* **Member**, USENIX, 2014-present.
 * **Graduate Representative**, academic year 2014-2015, University of Massachusetts School of Computer Science.
   * Graduate representatives attend and vote during faculty meetings, and form a bridge between the graduate students and the faculty as a whole.
 * **Student Volunteer**, OOPSLA 2014.
