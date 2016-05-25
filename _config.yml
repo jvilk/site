@@ -5,6 +5,7 @@ locale: en_US
 description: Covering topics at the center of complex software systems.
 logo:
 search: false
+#url: http://localhost:4000
 url: https://jvilk.com
 
 

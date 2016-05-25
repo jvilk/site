@@ -232,6 +232,11 @@ blockquote.project {
 	font-style: normal;
 }
 
+blockquote.project p:first-child {
+	margin-bottom: 5px;
+	font-size: 1.4rem;
+}
+
 
 // Footnotes
 // --------------------------------------------------
@@ -297,6 +302,10 @@ pre {
 }
 .center{
 	text-align: center;
+}
+
+.authorlist {
+	margin-top: 5px;
 }
 
 
