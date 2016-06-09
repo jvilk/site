@@ -29,6 +29,7 @@ At the same time, these programs exhibit characteristics that can be exploited t
 >
 > This work is currently in submission.
 >
+> * [Tech Report](http://research.microsoft.com/apps/pubs/?id=266627)
 > * [Source Code (Core of Debugger)](https://github.com/Microsoft/ChakraCore/tree/TimeTravelDebugging)
 > * [MSDN Channel 9 Coverage: Demo of early version (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
 >{: .hlist}
