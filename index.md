@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 image:
-  feature: about_photo.jpg
+  feature: me.jpg
 excerpt: "John Vilk is a fifth year PhD student at UMass Amherst."
 modified: 2016-05-13T16:18:38.564948-04:00
 ---

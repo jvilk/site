@@ -34,7 +34,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: John Vilk
-  avatar: bio-photo.jpg
+  avatar: bio-photo-2.jpg
   email: jvilk@cs.umass.edu
   disqus-shortname: jvilk
   twitter: johnwvilk
