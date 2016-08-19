@@ -2,9 +2,9 @@
 layout: page
 title: About Me
 image:
-  feature: me.jpg
+  feature: me-2.jpg
 excerpt: "John Vilk is a fifth year PhD student at UMass Amherst."
-modified: 2016-05-13T16:18:38.564948-04:00
+modified: 2016-08-18T16:18:38.564948-04:00
 ---
 
 I am a fifth year PhD student at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
@@ -18,9 +18,27 @@ I am interested in bringing general purpose programming and novel debugging tech
 These environments lack common operating system abstractions and constrain execution in ways that preclude reusing code written for general purpose programming environments.
 At the same time, these programs exhibit characteristics that can be exploited to produce low-overhead debugging tools.
 
+> **Browsix: Bridging the Gap Between Unix and the Browser**
+>
+> *Bobby Powers, **John Vilk**, and Emery D. Berger*
+>{: .authorlist}
+>
+> Applications written to run on conventional operating systems typically depend on OS abstractions like processes, pipes, signals, sockets, and a shared file system. Porting these applications to the web currently requires extensive rewriting or hosting significant portions of code server-side because browsers present a nontraditional runtime environment that lacks OS functionality.
+>
+> This paper presents Browsix, a framework that bridges the considerable gap between conventional operating systems and the browser, enabling unmodified programs expecting a Unix-like environment to run directly in the browser. Browsix comprises two core parts: (1) a JavaScript-only system that makes core Unix features (including pipes, concurrent processes, signals, sockets, and a shared file system) available to web applications; and (2) extended JavaScript runtimes for C, C++, Go, and Node.js that support running programs written in these languages as processes in the browser. Browsix supports running a POSIX shell, making it straightforward to connect applications together via pipes.
+>
+> We illustrate Browsix's capabilities via case studies that demonstrate how it eases porting legacy applications to the browser and enables new functionality. We demonstrate a Browsix-enabled LaTeX editor that operates by executing unmodified versions of pdfLaTeX and BibTeX. This browser-only LaTeX editor can render documents in seconds, making it fast enough to be practical. We further demonstrate how Browsix lets us port a client-server application to run entirely in the browser for disconnected operation. Creating these applications required less than 50 lines of glue code and no code modifications, demonstrating how easily Browsix can be used to build sophisticated web applications from existing parts without modification.
+>
+> This work is currently in submission.
+>
+> * [Tech Report](https://web.cs.umass.edu/publication/details.php?id=2416)
+> * [Source Code](https://github.com/plasma-umass/browsix)
+>{: .hlist}
+{: .project}
+
 > **A Gray Box Approach For High-Fidelity High-Speed Time-Travel Debugging**
 >
-> ***John Vilk**, James Mickens, and Mark Marron*
+> * **John Vilk**, James Mickens, and Mark Marron*
 >{: .authorlist}
 >
 > Time-travel debugging (TTD) lets developers step backward as well as forward through a program’s execution. TTD is a powerful mechanism for diagnosing bugs, but previous approaches suffer from poor performance due to checkpoint and logging overhead, or poor fidelity because important information like GUI state is not tracked.
@@ -32,20 +50,6 @@ At the same time, these programs exhibit characteristics that can be exploited t
 > * [Tech Report](http://research.microsoft.com/apps/pubs/?id=266627)
 > * [Source Code (Core of Debugger)](https://github.com/Microsoft/ChakraCore/tree/TimeTravelDebugging)
 > * [MSDN Channel 9 Coverage: Demo of early version (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
->{: .hlist}
-{: .project}
-
-> **Browsix: Browsix: Bringing Unix to the Browser**
->
-> *Bobby Powers, **John Vilk**, and Emery D. Berger*
->{: .authorlist}
->
-> While standard operating systems like Unix make it relatively simple to build complex applications, web browsers lack the features that make this possible. In this paper, we present Browsix, a JavaScript-only framework that brings the essence of Unix to the browser. Browsix makes core Unix features available to web applications (including pipes, processes, signals, sockets, and a shared file system) and extends JavaScript runtimes for C, C++, Go, and Node.js programs so they can run in a Unix-like environment within the browser. Browsix also provides a POSIX-like shell that makes it easy to compose applications together for parallel data processing via pipes. We illustrate Browsix’s capabilities by converting a client-server application to run entirely in the browser and developing a serverless LaTeX editor that executes PDFLaTeX and BibTeX in the browser. Creating these applications required less than 50 lines of glue code, demonstrating how easily Browsix can be used to build sophisticated web applications from existing parts without modification.
->
-> This work is currently in submission.
->
-> * [Tech Report](https://web.cs.umass.edu/publication/details.php?id=2414)
-> * [Source Code](https://github.com/plasma-umass/browsix)
 >{: .hlist}
 {: .project}
 
