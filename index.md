@@ -38,7 +38,7 @@ At the same time, these programs exhibit characteristics that can be exploited t
 
 > **A Gray Box Approach For High-Fidelity High-Speed Time-Travel Debugging**
 >
-> * **John Vilk**, James Mickens, and Mark Marron*
+> ***John Vilk**, James Mickens, and Mark Marron*
 >{: .authorlist}
 >
 > Time-travel debugging (TTD) lets developers step backward as well as forward through a program’s execution. TTD is a powerful mechanism for diagnosing bugs, but previous approaches suffer from poor performance due to checkpoint and logging overhead, or poor fidelity because important information like GUI state is not tracked.
