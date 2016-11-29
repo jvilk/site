@@ -3,38 +3,19 @@ layout: page
 title: About Me
 image:
   feature: me-2.jpg
-excerpt: "John Vilk is a fifth year PhD student at UMass Amherst."
+excerpt: "John Vilk is a sixth year PhD student at UMass Amherst."
 modified: 2016-08-18T16:18:38.564948-04:00
 ---
 
-I am a fifth year PhD student at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
+I am a sixth year PhD student at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
 
 * Table of Contents
 {:toc}
 
 # Research
 
-I am interested in bringing general purpose programming and novel debugging techniques to constrained programming environments, such as the web browser.
-These environments lack common operating system abstractions and constrain execution in ways that preclude reusing code written for general purpose programming environments.
-At the same time, these programs exhibit characteristics that can be exploited to produce low-overhead debugging tools.
-
-> **Browsix: Bridging the Gap Between Unix and the Browser**
->
-> *Bobby Powers, **John Vilk**, and Emery D. Berger*
->{: .authorlist}
->
-> Applications written to run on conventional operating systems typically depend on OS abstractions like processes, pipes, signals, sockets, and a shared file system. Porting these applications to the web currently requires extensive rewriting or hosting significant portions of code server-side because browsers present a nontraditional runtime environment that lacks OS functionality.
->
-> This paper presents Browsix, a framework that bridges the considerable gap between conventional operating systems and the browser, enabling unmodified programs expecting a Unix-like environment to run directly in the browser. Browsix comprises two core parts: (1) a JavaScript-only system that makes core Unix features (including pipes, concurrent processes, signals, sockets, and a shared file system) available to web applications; and (2) extended JavaScript runtimes for C, C++, Go, and Node.js that support running programs written in these languages as processes in the browser. Browsix supports running a POSIX shell, making it straightforward to connect applications together via pipes.
->
-> We illustrate Browsix's capabilities via case studies that demonstrate how it eases porting legacy applications to the browser and enables new functionality. We demonstrate a Browsix-enabled LaTeX editor that operates by executing unmodified versions of pdfLaTeX and BibTeX. This browser-only LaTeX editor can render documents in seconds, making it fast enough to be practical. We further demonstrate how Browsix lets us port a client-server application to run entirely in the browser for disconnected operation. Creating these applications required less than 50 lines of glue code and no code modifications, demonstrating how easily Browsix can be used to build sophisticated web applications from existing parts without modification.
->
-> This work is currently in submission.
->
-> * [Tech Report](https://web.cs.umass.edu/publication/details.php?id=2416)
-> * [Source Code](https://github.com/plasma-umass/browsix)
->{: .hlist}
-{: .project}
+My research aims to improve the browser as an application platform by making it easier to write, debug, and optimize complex web applications.
+To that end, my research interests include debugging, software performance, operating systems, and programming languages.
 
 > **A Gray Box Approach For High-Fidelity High-Speed Time-Travel Debugging**
 >
@@ -50,6 +31,25 @@ At the same time, these programs exhibit characteristics that can be exploited t
 > * [Tech Report](http://research.microsoft.com/apps/pubs/?id=266627)
 > * [Source Code (Core of Debugger)](https://github.com/Microsoft/ChakraCore/tree/TimeTravelDebugging)
 > * [MSDN Channel 9 Coverage: Demo of early version (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
+>{: .hlist}
+{: .project}
+
+> **Browsix: Bridging the Gap Between Unix and the Browser**
+>
+> *Bobby Powers, **John Vilk**, and Emery D. Berger*
+>{: .authorlist}
+>
+> Applications written to run on conventional operating systems typically depend on OS abstractions like processes, pipes, signals, sockets, and a shared file system. Porting these applications to the web currently requires extensive rewriting or hosting significant portions of code server-side because browsers present a nontraditional runtime environment that lacks OS functionality.
+>
+> This paper presents Browsix, a framework that bridges the considerable gap between conventional operating systems and the browser, enabling unmodified programs expecting a Unix-like environment to run directly in the browser. Browsix comprises two core parts: (1) a JavaScript-only system that makes core Unix features (including pipes, concurrent processes, signals, sockets, and a shared file system) available to web applications; and (2) extended JavaScript runtimes for C, C++, Go, and Node.js that support running programs written in these languages as processes in the browser. Browsix supports running a POSIX shell, making it straightforward to connect applications together via pipes.
+>
+> We illustrate Browsix's capabilities via case studies that demonstrate how it eases porting legacy applications to the browser and enables new functionality. We demonstrate a Browsix-enabled LaTeX editor that operates by executing unmodified versions of pdfLaTeX and BibTeX. This browser-only LaTeX editor can render documents in seconds, making it fast enough to be practical. We further demonstrate how Browsix lets us port a client-server application to run entirely in the browser for disconnected operation. Creating these applications required less than 50 lines of glue code and no code modifications, demonstrating how easily Browsix can be used to build sophisticated web applications from existing parts without modification.
+>
+> This work was recently accepted to ASPLOS 2017.
+>
+> * [ASPLOS '17 Preprint](https://arxiv.org/abs/1611.07862)
+> * [Webpage](https://browsix.org/)
+> * [Source Code](https://github.com/plasma-umass/browsix)
 >{: .hlist}
 {: .project}
 
@@ -165,6 +165,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 # Professional Activities
 
+* **External Review Committee Member**, PLDI 2017.
 * **External Review Committee Member**, PLDI 2016.
   * As a member of the ERC, I was an expert reviewer on a small number of papers.
 * **Mentor**, [Computing Beyond the Double Bind Mentoring Network](https://www.terc.edu/display/Projects/Computing+Beyond+the+Double+Bind%3A+Women+of+Color+in+Computing+Education+and+Careers), 2015-present.
