@@ -16,9 +16,10 @@ This blog post contains the content of that homework.*
 
 {{ excerpt_separator }}
 
-It's hard to write web applications. In order to understand the utility of my research, it's important to understand *why* this is so.
-
-Before my talk, I'd like you to run, tinker with, and think about some of the JavaScript code snippets below.
+It's hard to write web applications.
+Before my talk, I want you to appreciate some of the difficulties involved in writing and debugging web apps.
+If you have the time, I'd like you to run, tinker with, and think about some of the JavaScript code snippets below.
+It will help you understand where my research is coming from.
 
 ## Basic JavaScript
 
