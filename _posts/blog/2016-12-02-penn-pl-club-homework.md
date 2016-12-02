@@ -123,7 +123,7 @@ This is just a small taste of the many oddities of JavaScript. Due to its dynami
 
 ## Event-driven Execution
 
-In most traditional programming languages, a program begins and ends in a single function (e.g., `main()`). If you pause the application at a debugger breakpoint, you can see a stack trace leading back to this main entrypoint.
+In most traditional imperative programming languages, a program begins and ends in a single function (e.g., `main()`). If you pause the application at a debugger breakpoint, you can see a stack trace leading back to this main entrypoint.
 
 JavaScript programs are not like this; instead, they are entirely *event-driven*. When a JavaScript library loads on a webpage, it subscribes to events it is interested in via *event handlers*. The browser triggers the relevant handler(s) when an event happens.
 
@@ -151,7 +151,9 @@ setTimeout(function() {
 {% endhighlight %}
 <a href="/images/pl-club-examples/button.html" target="_blank"><i>Run this code</i></a>
 
-In JavaScript, *everything* is event-driven. You cannot opt out. At the same time, JavaScript execution blocks the UI from updating or receiving user input. As a result, a long-running event can *crash the browser tab*.
+In JavaScript, *everything* is event-driven. You cannot opt out.
+At the same time, JavaScript execution blocks the UI from updating or receiving user input.
+As a result, a long-running event can *crash the browser tab*.
 
 For example, the following code will crash your browser tab. You cannot click the button on the page. The browser will ask you if you want to kill the tab:
 
