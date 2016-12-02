@@ -28,7 +28,7 @@ To that end, my research interests include debugging, software performance, oper
 >
 > This work is currently in submission.
 >
-> * [Tech Report](http://research.microsoft.com/apps/pubs/?id=266627)
+> * [Tech Report](https://www.microsoft.com/en-us/research/publication/gray-box-approach-high-fidelity-high-speed-time-travel-debugging/)
 > * [Source Code (Core of Debugger)](https://github.com/Microsoft/ChakraCore/tree/TimeTravelDebugging)
 > * [MSDN Channel 9 Coverage: Demo of early version (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
 >{: .hlist}
@@ -85,7 +85,7 @@ To that end, my research interests include debugging, software performance, oper
 > * [Demo](http://doppiojvm.org/)
 > * [Source Code](https://github.com/plasma-umass/doppio)
 > * [PLDI '14 Paper](http://dl.acm.org/citation.cfm?id=2594293) ([Alt. Link](https://plasma-umass.github.io/doppio-demo/paper.pdf))
-> * [Talk @ Microsoft Research (Video)](http://research.microsoft.com/apps/video/default.aspx?id=238749&l=i)
+> * [Talk @ Microsoft Research (Video)](https://www.youtube.com/watch?v=i1JzZIq82uU)
 > {: .hlist}
 {: .project}
 
