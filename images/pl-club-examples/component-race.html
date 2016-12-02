@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<style type="text/css">
+@keyframes color_change {
+  from { background-color: blue; }
+  to { background-color: red; }
+}
+#picker { animation: color_change 5s infinite alternate; }
+</style>
+<div id="picker">
+  Picker
+</div>
+<script type="text/javascript">
+// Checks if element e has a blue background.
+function isBlue(e) {
+  var color = getComputedStyle(e).backgroundColor;
+  return color === 'rgb(0, 0, 255)';
+}
+
+var div = document.getElementById('picker');
+if (isBlue(div)) {
+  // do something
+}
+
+if (isBlue(div)) {
+  // do something
+}
+
+</script>
+</html>

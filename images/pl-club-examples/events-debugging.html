@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<script type="text/javascript">
+var error = false;
+function bar() {
+  if (error) {
+    // If you have developer tools open, the debugger statement triggers a breakpoint.
+    debugger;
+    alert("Error occurred!");
+  }
+}
+
+function foo() {
+  bar();
+}
+
+function baz() {
+  error = true;
+}
+
+// Run baz after 50 milliseconds
+setTimeout(baz, 50);
+// Run foo after 5 seconds.
+setTimeout(foo, 5000);
+</script>
+
+</html>

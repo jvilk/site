@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<button>Click me!</button>
+<script type="text/javascript">
+var buttons = document.getElementsByTagName('button');
+// Assumption: There's only one button on the page.
+var button = buttons[0];
+var clicked = false;
+button.addEventListener('click', function() {
+  clicked = true;
+});
+// Check if user clicked button after 5 seconds.
+setTimeout(function() {
+  if (clicked) {
+    alert("You clicked the button! :D");
+  } else {
+    alert("You didn't click the button. :(")
+  }
+}, 5000);
+</script>
+
+</html>
