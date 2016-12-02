@@ -22,7 +22,8 @@ It will help you understand where my research is coming from.
 
 ## Basic JavaScript
 
-*For this section, I recommend you [install NodeJS](https://nodejs.org/en/) and enter the REPL to follow along!*
+*For this section, I recommend you [open your browser's Developer Tools](https://developers.google.com/web/tools/chrome-devtools/shortcuts#accessing_devtools)
+to the Console, which is a REPL. All modern browsers have this feature. There, you can follow along with the examples.*
 
 JavaScript is a high-level and dynamically typed programming language. When you write a web application, it must be written in or compile down to JavaScript.
 
