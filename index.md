@@ -93,6 +93,37 @@ To that end, my research interests include debugging, software performance, oper
 
 Occasionally, I find the time to work on some fun side projects.
 
+> **MakeTypes: TypeScript Types from JSON Examples**
+>
+> MakeTypes lets developers typecheck code that interacts with JSON services
+> by generating TypeScript types from JSON examples. MakeTypes can also optionally
+> perform *runtime type checking* to enforce these types at runtime, guarding code
+> against unexpected service responses.
+>
+> MakeTypes uses the Common Preferred Shape Relation from [this PLDI paper](https://dl.acm.org/citation.cfm?id=2908115).
+>
+> * [Demo](https://jvilk.com/MakeTypes)
+> * [NPM Module](https://www.npmjs.com/package/maketypes)
+> * [Source Code](https://github.com/jvilk/maketypes)
+> {: .hlist}
+{: .project}
+
+> **TypeScript Generator for Dropbox's Stone**
+>
+> Stone is a language-agnostic specification language for APIs. Stone's generators can generate
+> SDKs for a variety of languages from a Stone specification, including JavaScript.
+>
+> I mapped [Stone's types onto TypeScript's type system](https://github.com/dropbox/stone/pull/14),
+> and implemented a Stone generator that produces TypeScript definition files for its JavaScript
+> generator.
+>
+> This generator will [eventually provide TypeScript types for the Dropbox JavaScript SDK.](https://github.com/dropbox/dropbox-sdk-js/pull/96)
+>
+> * [Source Code](https://github.com/dropbox/stone)
+> * [Mapping from Stone's types to TypeScript's type system](https://github.com/dropbox/stone/pull/14)
+> {: .hlist}
+{: .project}
+
 > **MS-DOS Collection at the Internet Archive**
 >
 > The [MS-DOS Collection](https://archive.org/details/softwarelibrary_msdos_games/v2) at the [Internet Archive](https://archive.org/) relies on [Doppio's file system](https://github.com/jvilk/browserfs) to make a large collection of DOS games playable in the browser.
