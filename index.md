@@ -198,14 +198,13 @@ Occasionally, I find the time to work on some fun side projects.
 
 * **External Review Committee Member**, PLDI 2017.
 * **External Review Committee Member**, PLDI 2016.
-  * As a member of the ERC, I was an expert reviewer on a small number of papers.
-* **Mentor**, [Computing Beyond the Double Bind Mentoring Network](https://www.terc.edu/display/Projects/Computing+Beyond+the+Double+Bind%3A+Women+of+Color+in+Computing+Education+and+Careers), 2015-present.
+* **Mentor**, [Computing Beyond the Double Bind Mentoring Network](https://www.terc.edu/display/Projects/Computing+Beyond+the+Double+Bind%3A+Women+of+Color+in+Computing+Education+and+Careers), 2015-2016.
   * As a part of this program, I remotely mentor two undergraduate women of color to provide them with a listening ear and professional guidance.
 * **Member**, IEEE, 2015-present.
 * **Member**, USENIX, 2014-present.
 * **Graduate Representative**, academic year 2014-2015, University of Massachusetts School of Computer Science.
   * Graduate representatives attend and vote during faculty meetings, meet and provide feedback on faculty candidates, and form a bridge between the graduate students and the faculty as a whole.
-* **Student Volunteer**, PLDI 2016 PC Meeting, OOPSLA 2014.
+* **Student Volunteer**, PLDI 2016, PLDI 2016 PC Meeting, OOPSLA 2014.
 * **Artifact Evaluation Committee Member**: OOPSLA 2015, PLDI 2015, OOPSLA 2014.
 * **External Reviewer:** USENIX Security 2014, PLDI 2014, OOPSLA 2012, MSPC 2012, HotPar 2012.
 * **Member**, ACM, 2008-present.
@@ -219,5 +218,5 @@ Occasionally, I find the time to work on some fun side projects.
 * **Mentor**, Doppio, PLASMA Lab, Google Summer of Code, Summer 2015.
   * *Students*: Muhammad Bhatti
 * **Mentor**, Doppio, PLASMA Lab, Google Summer of Code, Summer 2013.
-  * *Students*: [Giles Lavelle](http://lavelle.co/) & [Braden McDorman](http://bmcdorman.cloudapp.net/)
+  * *Students*: [Giles Lavelle](http://lavelle.co/) & Braden McDorman
 {: .simplelist}
