@@ -17,20 +17,20 @@ I am a sixth year PhD student at the University of Massachusetts Amherst. I work
 My research aims to improve the browser as an application platform by making it easier to write, debug, and optimize complex web applications.
 To that end, my research interests include debugging, software performance, operating systems, and programming languages.
 
-> **A Gray Box Approach For High-Fidelity High-Speed Time-Travel Debugging**
+> **ReJS: Time-Travel Debugging for Browser-Based Applications**
 >
 > ***John Vilk**, James Mickens, and Mark Marron*
 >{: .authorlist}
 >
-> Time-travel debugging (TTD) lets developers step backward as well as forward through a program’s execution. TTD is a powerful mechanism for diagnosing bugs, but previous approaches suffer from poor performance due to checkpoint and logging overhead, or poor fidelity because important information like GUI state is not tracked.
+> Browser-based applications are difficult to debug because they are inherently nondeterministic. Network requests can intermittently fail or return unexpected results, JavaScript events can race with one another, and JavaScript code can race with the browser's renderer. Traditional stepping debuggers provide little help to developers trying to debug these issues.
 >
->In this paper, we describe how to provide high-performance and high-fidelity TTD to programs written in managed languages. Previous high-performance debuggers treat components external to the program like the GUI as black boxes, but that is not sufficient for high-fidelity time-travel. Instead, we advocate for a gray-box approach that keeps these components live and in sync with the program during time-travel. The key insight is that managed runtime APIs expose most of the functionality required to do this; where it does not, we extend the runtime with a small number of non-intrusive interrogative interfaces. To demonstrate the power of our gray-box approach, we implement ReJS, a time-traveling debugger for web applications. ReJS imposes imperceptible tracing overhead, and its logs typically grow less than 1 KB/s. As a result, ReJS is performant enough to be deployed in the wild; real client machines can ship buggy execution traces across the wide area to developer-side machines for debugging.
+> We present ReJS, the first time-traveling debugger for browser-based applications that lets developers step forward and backward in time to isolate non-determinacy bugs. ReJS faithfully and efficiently reproduces nondeterministic behavior, and supports existing GUI debugging tools during time-travel because it keeps the browser's renderer live and in sync with JavaScript execution. To make time-travel possible, we extend the renderer with a small number of non-intrusive *interrogative interfaces* that expose previously hidden runtime information. ReJS imposes imperceptible tracing overhead, its logs typically grow less than 1 KB/s, and, after a one-time startup delay, stepping backward is as fast as stepping forward. Core parts of ReJS have been incorporated into Microsoft's ChakraCore JavaScript engine.
 >
 > This work is currently in submission.
 >
 > * [Tech Report](https://www.microsoft.com/en-us/research/publication/gray-box-approach-high-fidelity-high-speed-time-travel-debugging/)
 > * [Source Code (Core of Debugger)](https://github.com/Microsoft/ChakraCore/tree/TimeTravelDebugging)
-> * [MSDN Channel 9 Coverage: Demo of early version (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
+> * [MSDN Channel 9 Coverage: Demo of alpha version (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
 >{: .hlist}
 {: .project}
 
