@@ -136,7 +136,7 @@ Occasionally, I find the time to work on some fun side projects.
 > and implemented a Stone generator that produces TypeScript definition files from a Stone API
 > specification.
 >
-> This generator will provides TypeScript types for the [Dropbox JavaScript SDK](https://github.com/dropbox/dropbox-sdk-js).
+> This generator provides TypeScript types for the [Dropbox JavaScript SDK](https://github.com/dropbox/dropbox-sdk-js).
 >
 > * [Source Code](https://github.com/dropbox/stone)
 > * [Mapping from Stone's type system to TypeScript's type system](https://github.com/dropbox/stone/pull/14)
