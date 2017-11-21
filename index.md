@@ -229,7 +229,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 * **Guest Lecturer**, COMPSCI 326: Web Development, University of Massachusetts Amherst, Spring 2016.
 * **Teaching Assistant**, COMPSCI 326: Web Development, University of Massachusetts Amherst, Spring 2016.
-  * *As a TA, I co-taught the class with the instructor. I redesigned the curriculum, designed and wrote all of the assignments, graded assignments, held well-attended office hours, and answered hundreds of questions on Piazza.*
+  * *As a TA, I co-taught the class with the instructor. I redesigned the curriculum, designed and wrote all of the assignments, graded assignments, held well-attended office hours, and answered hundreds of questions on Piazza. An archived version of the course website and assignments can be found* [here.](https://jvilk.com/cmpsci-326)
 * **Research Mentor**
   * **Muhammad Bhatti**, Undergraduate in Computer Science, [NUST](http://www.nust.edu.pk/), Pakistan, Summer 2015.
     * *Remotely supervised contributions to a research project via Google Summer of Code. Extended an [experimental Python implementation](https://github.com/plasma-umass/ninia) with multithreading support.*
