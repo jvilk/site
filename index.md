@@ -9,7 +9,14 @@ modified: 2016-08-18T16:18:38.564948-04:00
 
 I am a PhD candidate at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
 
-**I am currently on the job market.** Contact me if you believe I would be a good fit for your department or organization!
+**I am currently on the job market.**  Contact me if you believe I would be a good fit for your department or organization!
+
+
+<div style="text-align:center;width:100%;">
+<a class="btn" style="padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px;" href="https://jvilk.com/assets/pdf/cv.pdf" role="button"><i class="fa fa-briefcase"></i> C.V.</a>
+<a class="btn" style="padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px;" href="https://jvilk.com/assets/pdf/rs.pdf" role="button"><i class="fa fa-search"></i> Research Statement</a>
+<a class="btn" style="padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px;" href="https://jvilk.com/assets/pdf/ts.pdf" role="button"><i class="fa fa-graduation-cap"></i> Teaching Statement</a>
+</div>
 
 * Table of Contents
 {:toc}
@@ -83,7 +90,9 @@ My research interests include, but are not limited to, software debugging, perfo
 > 2. The *detection sandbox* lets applications declaratively place content near recognized objects in the room without revealing if the object is present.
 > 3. *Satellite screens* let applications display content across devices registered with SurroundWeb.
 >
-> We implement these abstractions in a prototype system, and demonstrate that a wide range of immersive experiences can be implemented  with acceptable performance. SurroundWeb will appear at [IEEE Security and Privacy 2015](http://www.ieee-security.org/TC/SP2015/).
+> We implement these abstractions in a prototype system, and demonstrate that a wide range of immersive experiences can be implemented  with acceptable performance.
+>
+> SurroundWeb appeared at [IEEE S&P 2015.](http://www.ieee-security.org/TC/SP2015/)
 >
 > * [IEEE S&P '15 Paper](http://ieeexplore.ieee.org/document/7163040/) [(Alt. link)](https://jvilk.com/assets/pdf/oakland15.pdf)
 > * [IEEE S&P '15 Presentation (Video)](https://www.youtube.com/watch?v=BO3rQ9R5gKM)
@@ -119,7 +128,7 @@ Occasionally, I find the time to work on some fun side projects.
 > perform *runtime type checking* to enforce these types at runtime, guarding code
 > against unexpected service responses.
 >
-> MakeTypes uses the Common Preferred Shape Relation from [Petricek et al. (PLD16)](https://dl.acm.org/citation.cfm?id=2908115).
+> MakeTypes uses the Common Preferred Shape Relation from [Petricek et al. (PLDI 2016)](https://dl.acm.org/citation.cfm?id=2908115).
 >
 > * [Demo](https://jvilk.com/MakeTypes)
 > * [NPM Module](https://www.npmjs.com/package/maketypes)
