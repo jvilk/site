@@ -73,7 +73,7 @@ My research interests include, but are not limited to, software debugging, perfo
 >
 > This work appeared at ASPLOS 2017.
 >
-> * [ASPLOS '17 Paper](https://arxiv.org/abs/1611.07862) [(Alt. link)](https://jvilk.com/assets/pdf/asplos17.pdf)
+> * [ASPLOS '17 Paper](https://dl.acm.org/citation.cfm?id=3037727) [(Alt. link)](https://jvilk.com/assets/pdf/asplos17.pdf)
 > * [Webpage](https://browsix.org/)
 > * [Source Code](https://github.com/plasma-umass/browsix)
 >{: .hlist}
