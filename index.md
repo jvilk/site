@@ -9,15 +9,6 @@ modified: 2016-08-18T16:18:38.564948-04:00
 
 I am a PhD candidate at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
 
-**I am currently on the job market.**  Contact me if you believe I would be a good fit for your department or organization!
-
-
-<div style="text-align:center;width:100%;">
-<a class="btn" style="padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px;" href="https://jvilk.com/assets/pdf/cv.pdf" role="button"><i class="fa fa-briefcase"></i> C.V.</a>
-<a class="btn" style="padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px;" href="https://jvilk.com/assets/pdf/rs.pdf" role="button"><i class="fa fa-search"></i> Research Statement</a>
-<a class="btn" style="padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px;" href="https://jvilk.com/assets/pdf/ts.pdf" role="button"><i class="fa fa-graduation-cap"></i> Teaching Statement</a>
-</div>
-
 * Table of Contents
 {:toc}
 
