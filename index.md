@@ -44,9 +44,9 @@ My research interests include, but are not limited to, software debugging, perfo
 > This paper introduces BLeak (**B**rowser **Leak** debugger), the first system for automatically debugging memory leaks
 > in web applications. BLeak's algorithms leverage the observation that in modern web applications, users often repeatedly return to the same (approximate) visual state (e.g., the inbox view in Gmail). Sustained growth between round trips is a strong indicator of a memory leak. To use BLeak, a developer writes a short script (≈40 LOC) to drive a web application in round trips to the same visual state. BLeak then automatically generates a list of leaks found along with their root causes, ranked by severity. Guided by BLeak, we identify and fix over 50 memory leaks in popular libraries and apps including Airbnb, AngularJS, Google Analytics, Google Maps SDK, and jQuery. BLeak's median precision is 100%; fixing the leaks it identifies reduces heap growth by an average of 94%, saving from 0.5 MB to 8 MB per round trip.
 >
-> This work is currently in submission.
+> BLeak will appear at PLDI 2018.
 >
-> * [Preprint (in submission)](https://jvilk.com/assets/pdf/bleak.pdf)
+> * [Preprint (to appear at PLDI 2018)](https://jvilk.com/assets/pdf/bleak.pdf)
 > * [Source Code](https://github.com/plasma-umass/bleak)
 >{: .hlist}
 {: .project}
