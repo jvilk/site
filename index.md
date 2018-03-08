@@ -176,7 +176,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 # Education
 
-* **Ph.D. in Computer Science**, University of Massachusetts, Anticipated May, 2018.
+* **Ph.D. in Computer Science**, University of Massachusetts, Anticipated September, 2018.
   * *Advised by* [Emery D. Berger.](https://emeryberger.com/)
 * **M.S. in Computer Science**, University of Massachusetts, 2014.
 * **B.S. in Computer Science**, Worcester Polytechnic Institute, May, 2011.
