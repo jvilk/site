@@ -4,10 +4,10 @@ title: About Me
 image:
   feature: me-2.jpg
 excerpt: "John Vilk is PhD candidate at UMass Amherst."
-modified: 2016-08-18T16:18:38.564948-04:00
+modified: 2018-11-18T16:18:38.564948-04:00
 ---
 
-I am a PhD candidate at the University of Massachusetts Amherst. I work in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
+I am a software engineer at [Stripe](https://stripe.com/) working remotely from Corvallis, Oregon. Prior to that, I completed my PhD at the University of Massachusetts Amherst while working in the [PLASMA](http://www.cs.umass.edu/~plasma/) lab with [Emery Berger](http://emeryberger.com/). Feel free to [contact me](../contact/) if you want to get in touch!
 
 * Table of Contents
 {:toc}
@@ -19,16 +19,14 @@ My research interests include, but are not limited to, software debugging, perfo
 
 > **ReJS: Time-Travel Debugging for Browser-Based Applications**
 >
-> ***John Vilk**, James Mickens, and Mark Marron*
+> ***John Vilk**, Emery D. Berger, James Mickens, and Mark Marron*
 >{: .authorlist}
 >
-> Browser-based applications are difficult to debug because they are inherently nondeterministic. Network requests can intermittently fail or return unexpected results, JavaScript events can race with one another, and JavaScript code can race with the browser's renderer. Traditional stepping debuggers provide little help to developers trying to debug these issues.
+> Time-traveling debuggers offer the promise of simplifying debugging by letting developers freely step forwards and backwards through a program's execution. However, web applications present multiple challenges that make time-travel debugging especially difficult. A time-traveling debugger for web applications must accurately reproduce all network interactions, asynchronous events, and visual states observed during the original execution, both while stepping forwards and backwards. This must all be done in the context of a complex and highly multithreaded browser runtime. At the same time, to be practical, a time-traveling debugger must maintain interactive speeds.
 >
-> We present ReJS, the first time-traveling debugger for browser-based applications that lets developers step forward and backward in time to isolate non-determinacy bugs. ReJS faithfully and efficiently reproduces nondeterministic behavior, and supports existing GUI debugging tools during time-travel because it keeps the browser's renderer live and in sync with JavaScript execution. To make time-travel possible, we extend the renderer with a small number of non-intrusive *interrogative interfaces* that expose previously hidden runtime information. ReJS imposes imperceptible tracing overhead, its logs typically grow less than 1 KB/s, and, after a one-time startup delay, stepping backward is as fast as stepping forward. Core parts of ReJS have been incorporated into Microsoft's ChakraCore JavaScript engine, which ships in Windows 10.
+> This paper presents McFly, the first time-traveling debugger for web applications. McFly departs from previous approaches by operating on a high-level representation of the browser's internal state. This approach lets McFly provide accurate time-travel debugging - maintaining JavaScript and visual state in sync at all times - at interactive speeds. McFly's architecture is browser-agnostic, building on web standards supported by all major browsers. We have implemented McFly as an extension to the Microsoft Edge web browser, and core parts of McFly have been integrated into a time-traveling debugger product from Microsoft.
 >
-> This work is currently in submission.
->
-> * [Tech Report (previous draft)](https://www.microsoft.com/en-us/research/publication/gray-box-approach-high-fidelity-high-speed-time-travel-debugging/)
+> * [Arxiv](https://arxiv.org/abs/1810.11865)
 > * [ChakraCore Source Code](https://github.com/Microsoft/ChakraCore)
 > * [MSDN Channel 9 Coverage: Demo of alpha (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
 >{: .hlist}
@@ -44,10 +42,10 @@ My research interests include, but are not limited to, software debugging, perfo
 > This paper introduces BLeak (**B**rowser **Leak** debugger), the first system for automatically debugging memory leaks
 > in web applications. BLeak's algorithms leverage the observation that in modern web applications, users often repeatedly return to the same (approximate) visual state (e.g., the inbox view in Gmail). Sustained growth between round trips is a strong indicator of a memory leak. To use BLeak, a developer writes a short script (≈40 LOC) to drive a web application in round trips to the same visual state. BLeak then automatically generates a list of leaks found along with their root causes, ranked by severity. Guided by BLeak, we identify and fix over 50 memory leaks in popular libraries and apps including Airbnb, AngularJS, Google Analytics, Google Maps SDK, and jQuery. BLeak's median precision is 100%; fixing the leaks it identifies reduces heap growth by an average of 94%, saving from 0.5 MB to 8 MB per round trip.
 >
-> BLeak will appear at PLDI 2018.
+> BLeak appeared at PLDI 2018.
 >
 > * [Website](http://bleak-detector.org/)
-> * [Preprint (to appear at PLDI 2018)](https://jvilk.com/assets/pdf/bleak.pdf)
+> * [PLDI '18 Paper](https://dl.acm.org/citation.cfm?id=3192366.3192376) [(Alt. link)](https://jvilk.com/assets/pdf/bleak.pdf)
 > * [Source Code](https://github.com/plasma-umass/bleak)
 >{: .hlist}
 {: .project}
@@ -184,7 +182,8 @@ Occasionally, I find the time to work on some fun side projects.
 
 # Employment
 
-* **Research Assistant**, University of Massachusetts, 2011 to present.
+* **Software Engineer**, Stripe, 2018 to present.
+* **Research Assistant**, University of Massachusetts, 2011 to 2018.
   * *With the* [PLASMA](https://plasma.cs.umass.edu/) *group, working with* [Emery D. Berger.](https://emeryberger.com/)
 * **Teaching Assistant**, University of Massachusetts, Spring 2016.
   * *For CMPSCI 326: Web Programming, with* [Professor Timothy Richards](https://tim-umass.github.io/).
