@@ -17,6 +17,19 @@ I am a software engineer at [Stripe](https://stripe.com/) working remotely from 
 My research spans software systems, programming languages, and software engineering, with a focus on overcoming challenges posed by web application development.
 My research interests include, but are not limited to, software debugging, performance, portability, and reliability.
 
+> **Righting Web Development**
+>
+> ***John Vilk***
+>
+> This dissertation revisits web development and provides developers with a complete set of development tools with full support for the browser environment. McFly is the first time-traveling debugger for the browser, and lets developers debug web applications and their visual state during time-travel; components of this work shipped in Microsoft's ChakraCore JavaScript engine. BLeak is the first system for automatically debugging memory leaks in web applications, and provides developers with a ranked list of memory leaks along with the source code responsible for them. BCause constructs a causal graph of a web application's events, which helps developers understand their code's behavior. Doppio lets developers run code written in conventional languages in the browser, and Browsix brings Unix into the browser to enable unmodified programs expecting a Unix-like environment to run directly in the browser. Together, these five systems form a solid foundation for web development.
+>
+> * [PhD Dissertation](https://scholarworks.umass.edu/dissertations_2/1405/)
+> * [Dissertation Defense (Video)](https://www.youtube.com/watch?v=H0sovocOlNg)
+>{: .hlist}
+{: .project}
+
+>{: .authorlist}
+
 > **ReJS: Time-Travel Debugging for Browser-Based Applications**
 >
 > ***John Vilk**, Emery D. Berger, James Mickens, and Mark Marron*
