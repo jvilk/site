@@ -23,6 +23,8 @@ My research interests include, but are not limited to, software debugging, perfo
 >
 > This dissertation revisits web development and provides developers with a complete set of development tools with full support for the browser environment. McFly is the first time-traveling debugger for the browser, and lets developers debug web applications and their visual state during time-travel; components of this work shipped in Microsoft's ChakraCore JavaScript engine. BLeak is the first system for automatically debugging memory leaks in web applications, and provides developers with a ranked list of memory leaks along with the source code responsible for them. BCause constructs a causal graph of a web application's events, which helps developers understand their code's behavior. Doppio lets developers run code written in conventional languages in the browser, and Browsix brings Unix into the browser to enable unmodified programs expecting a Unix-like environment to run directly in the browser. Together, these five systems form a solid foundation for web development.
 >
+> My dissertation was chosen as an [*Outstanding Doctoral Dissertation*](https://www.cics.umass.edu/news/seven-graduate-students-receive-cics-outstanding-graduate-awards) by the UMass Amherst College of Information and Computer Sciences.
+>
 > * [PhD Dissertation](https://scholarworks.umass.edu/dissertations_2/1405/)
 > * [Dissertation Defense (Video)](https://www.youtube.com/watch?v=H0sovocOlNg)
 >{: .hlist}
@@ -39,7 +41,7 @@ My research interests include, but are not limited to, software debugging, perfo
 >
 > This paper presents McFly, the first time-traveling debugger for web applications. McFly departs from previous approaches by operating on a high-level representation of the browser's internal state. This approach lets McFly provide accurate time-travel debugging - maintaining JavaScript and visual state in sync at all times - at interactive speeds. McFly's architecture is browser-agnostic, building on web standards supported by all major browsers. We have implemented McFly as an extension to the Microsoft Edge web browser, and core parts of McFly have been integrated into a time-traveling debugger product from Microsoft.
 >
-> * [Arxiv](https://arxiv.org/abs/1810.11865)
+> * [Arxiv Paper](https://arxiv.org/abs/1810.11865)
 > * [ChakraCore Source Code](https://github.com/Microsoft/ChakraCore)
 > * [MSDN Channel 9 Coverage: Demo of alpha (Video)](https://channel9.msdn.com/blogs/Marron/Time-Travel-Debugging-for-JavaScriptHTML)
 >{: .hlist}
@@ -55,10 +57,11 @@ My research interests include, but are not limited to, software debugging, perfo
 > This paper introduces BLeak (**B**rowser **Leak** debugger), the first system for automatically debugging memory leaks
 > in web applications. BLeak's algorithms leverage the observation that in modern web applications, users often repeatedly return to the same (approximate) visual state (e.g., the inbox view in Gmail). Sustained growth between round trips is a strong indicator of a memory leak. To use BLeak, a developer writes a short script (≈40 LOC) to drive a web application in round trips to the same visual state. BLeak then automatically generates a list of leaks found along with their root causes, ranked by severity. Guided by BLeak, we identify and fix over 50 memory leaks in popular libraries and apps including Airbnb, AngularJS, Google Analytics, Google Maps SDK, and jQuery. BLeak's median precision is 100%; fixing the leaks it identifies reduces heap growth by an average of 94%, saving from 0.5 MB to 8 MB per round trip.
 >
-> BLeak appeared at PLDI 2018.
+> BLeak appeared at PLDI 2018 and was selected as a [SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/).
 >
 > * [Website](http://bleak-detector.org/)
 > * [PLDI '18 Paper](https://dl.acm.org/citation.cfm?id=3192366.3192376) [(Alt. link)](https://jvilk.com/assets/pdf/bleak.pdf)
+> * [PLDI '18 Presentation (Video)](https://www.youtube.com/watch?v=RzofyIvaY6A)
 > * [Source Code](https://github.com/plasma-umass/bleak)
 >{: .hlist}
 {: .project}
@@ -215,6 +218,8 @@ Occasionally, I find the time to work on some fun side projects.
 
 # Honors & Awards
 
+* **[SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)** for [BLeak: Automatically Debugging Memory Leaks in Web Applications](https://dl.acm.org/citation.cfm?id=3192366.3192376), 2019.
+* **[Outstanding Doctoral Dissertation Award](https://www.cics.umass.edu/news/seven-graduate-students-receive-cics-outstanding-graduate-awards)** from the UMass Amherst College of Information and Computer Sciences, 2019.
 * **Facebook Ph.D. Fellowship** in Programming Languages and Compilers, 2015-2017.
 * **[SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)** for [Doppio: Breaking the Browser Language Barrier](http://dl.acm.org/citation.cfm?id=2594293), 2014.
 * **Distinguished Artifact Award** for [Doppio: Breaking the Browser Language Barrier](http://github.com/plasma-umass/doppio), PLDI 2014.
