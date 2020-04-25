@@ -17,9 +17,24 @@ I am a software engineer at [Stripe](https://stripe.com/) working remotely from 
 My research spans software systems, programming languages, and software engineering, with a focus on overcoming challenges posed by web application development.
 My research interests include, but are not limited to, software debugging, performance, portability, and reliability.
 
+> **Comedians in cafes getting data: Evaluating timing and adaptivity in real-world robot comedy performance**
+>
+> ***John Vilk** and Naomi T. Fitter*
+>{: .authorlist}
+>
+>Social robots and autonomous social agents are becoming more ingrained in our everyday lives. Interactive agents from Siri to Anki's Cozmo robot include the ability to tell jokes to engage users. This ability will build in importance as in-home social agents take on more intimate roles, so it is important to gain a greater understanding of how robots can best use humor. Stand-up comedy provides a naturally-structured experimental context for initial studies of robot humor. In this preliminary work, we aimed to compare audience responses to a robotic stand-up comedian over multiple performances that varied robot timing and adaptivity. Our first study of 22 performances in the wild showed that a robot with good timing was significantly funnier. A second study of 10 performances found that an adaptive performance was not necessarily funnier, although adaptations almost always improved audience perception of individual jokes. The end result of this research provides key clues for how social robots can best engage people with humor.
+>
+> This work was awarded a Best Paper Award at HRI 2020.
+>
+> * [HRI '20 Paper](https://dl.acm.org/doi/10.1145/3319502.3374780) [(Alt. link)](https://drive.google.com/file/d/1rXlc3QDOl-NAu0fSvjITISdbGbwstOok/view?usp=sharing)
+> * [HRI '20 Presentation (Video)](https://www.youtube.com/watch?v=to2FQRYrbXQ)
+>{: .hlist}
+{: .project}
+
 > **Righting Web Development**
 >
 > ***John Vilk***
+>{: .authorlist}
 >
 > This dissertation revisits web development and provides developers with a complete set of development tools with full support for the browser environment. McFly is the first time-traveling debugger for the browser, and lets developers debug web applications and their visual state during time-travel; components of this work shipped in Microsoft's ChakraCore JavaScript engine. BLeak is the first system for automatically debugging memory leaks in web applications, and provides developers with a ranked list of memory leaks along with the source code responsible for them. BCause constructs a causal graph of a web application's events, which helps developers understand their code's behavior. Doppio lets developers run code written in conventional languages in the browser, and Browsix brings Unix into the browser to enable unmodified programs expecting a Unix-like environment to run directly in the browser. Together, these five systems form a solid foundation for web development.
 >
@@ -29,8 +44,6 @@ My research interests include, but are not limited to, software debugging, perfo
 > * [Dissertation Defense (Video)](https://www.youtube.com/watch?v=H0sovocOlNg)
 >{: .hlist}
 {: .project}
-
->{: .authorlist}
 
 > **ReJS: Time-Travel Debugging for Browser-Based Applications**
 >
@@ -218,6 +231,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 # Honors & Awards
 
+* **Best Paper Award** for [Comedians in cafes getting data: Evaluating timing and adaptivity in real-world robot comedy performance](https://dl.acm.org/doi/10.1145/3319502.3374780), HRI 2020.
 * **[SIGPLAN Research Highlight](http://www.sigplan.org/Newsletters/CACM/Papers/)** for [BLeak: Automatically Debugging Memory Leaks in Web Applications](https://dl.acm.org/citation.cfm?id=3192366.3192376), 2019.
 * **[Outstanding Doctoral Dissertation Award](https://www.cics.umass.edu/news/seven-graduate-students-receive-cics-outstanding-graduate-awards)** from the UMass Amherst College of Information and Computer Sciences, 2019.
 * **Facebook Ph.D. Fellowship** in Programming Languages and Compilers, 2015-2017.
@@ -235,6 +249,7 @@ Occasionally, I find the time to work on some fun side projects.
 
 # Professional Service
 
+* **Program Committee Member**, PLDI 2020.
 * **External Review Committee Member**, PLDI 2016, PLDI 2017.
 * **Artifact Evaluation Committee Member**, OOPSLA 2015, PLDI 2015, OOPSLA 2014.
 * **Graduate Representative**, University of Massachusetts College of Information and Computer Sciences, 2014-2015.
